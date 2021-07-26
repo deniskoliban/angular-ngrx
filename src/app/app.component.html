@@ -1,0 +1,9 @@
+<div class="numbers">
+  <app-bordered-number [number]="firstNumber$ | async" [borderColor]="firstBorderColor$ | async"></app-bordered-number>
+  <app-bordered-number [number]="secondNumber$ | async" [borderColor]="secondBorderColor$ | async"></app-bordered-number>
+</div>
+<div class="controls">
+  <button (click)="start()">START</button>
+  <button (click)="stop()">STOP</button>
+  <button (click)="reset()">RESET</button>
+</div>
